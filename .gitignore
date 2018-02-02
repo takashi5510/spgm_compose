@@ -1,0 +1,6 @@
+# directory
+/db/*
+/spgm/*
+!/db/.keep
+!/spgm/.keep
+
