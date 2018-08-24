@@ -18,5 +18,5 @@ services:
       DATABASE_PASSWORD: spgm
       DATABASE_PORT: 5432
       DATABASE_HOST: db
-    command: bash -c "sleep 10 && bundle exec rails db:migrate && sleep 30 && bundle exec rails s -b 0.0.0.0"
+    command: bash -c "rm -f /spgm/tmp/pids/* && sleep 10 && bundle exec rails db:migrate && sleep 30 && bundle exec rails s -b 0.0.0.0"
 
